@@ -1,5 +1,7 @@
 # Module Template for Nuxt.js
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/nuxt-community/module-template.svg)](https://greenkeeper.io/)
+
 > Simple Starter template for Nuxt.js Modules
 
 If you need to transpile your module (For example backward node compatibility for async/await) see [module-template-rollup](https://github.com/nuxt-community/module-template-rollup).
