@@ -8,7 +8,7 @@
       "name": "{{ author }}"
     }
   ],
-  "main": "dist/index.js",
+  "main": "lib/module.js",
   "repository": "https://github.com/{{ github }}",
   "publishConfig": {
     "access": "public"
