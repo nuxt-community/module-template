@@ -1,10 +1,9 @@
 # Module Template for Nuxt.js
 
-> Simple Starter template for Nuxt.js Modules
-
-If you need to transpile your module (For example backward node compatibility for async/await) see [module-template-rollup](https://github.com/nuxt-community/module-template-rollup).
+> Nuxt.js module template
 
 ## Features
+
 - ESLint
 - Ready tests using [Jest](https://facebook.github.io/jest)
 - Code coverage
