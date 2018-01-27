@@ -14,29 +14,33 @@
     "access": "public"
   },
   "scripts": {
+    "dev": "nuxt test fixture",
     "lint": "eslint lib test",
     "test": "npm run lint && jest",
     "release": "standard-version && git push --follow-tags && npm publish"
   },
-  "eslintIgnore": [
-    "lib/templates/*.*"
-  ],
-  "files": [
-    "lib"
-  ],
+  "eslintIgnore": ["lib/templates/*.*"],
+  "files": ["lib"],
   "jest": {
     "testEnvironment": "node",
     "coverageDirectory": "./coverage/",
     "collectCoverage": true,
-    "collectCoverageFrom": [
-      "lib",
-      "test"
-    ]
+    "collectCoverageFrom": ["lib", "test"]
   },
-  "dependencies": {
-
-  },
+  "dependencies": {},
   "devDependencies": {
-    "nuxt-module-builder": "latest"
+    "nuxt": "latest",
+    "codecov": "latest",
+    "eslint": "latest",
+    "eslint-config-standard": "latest",
+    "eslint-plugin-import": "latest",
+    "eslint-plugin-jest": "latest",
+    "eslint-plugin-node": "latest",
+    "eslint-plugin-promise": "latest",
+    "eslint-plugin-standard": "latest",
+    "eslint-plugin-vue": "latest",
+    "jest": "latest",
+    "jsdom": "latest",
+    "standard-version": "latest"
   }
 }

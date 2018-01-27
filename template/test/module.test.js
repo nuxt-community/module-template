@@ -10,22 +10,16 @@ const config = require('./fixture/nuxt.config')
 const url = path => `http://localhost:${process.env.PORT}${path}`
 const get = path => request(url(path))
 
-describe('Module', () => {
+describe('basic', () => {
   let nuxt
 
   beforeAll(async () => {
-    config.modules.unshift(function () {
-      // Add test specific test only hooks on nuxt life cycle
-    })
-
-    // Build a fresh nuxt
     nuxt = new Nuxt(config)
     await new Builder(nuxt).build()
     await nuxt.listen(process.env.PORT)
   })
 
   afterAll(async () => {
-    // Close all opened resources
     await nuxt.close()
   })
 
