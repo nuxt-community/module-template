@@ -1,13 +1,9 @@
-jasmine.DEFAULT_TIMEOUT_INTERVAL = 20000
-process.env.PORT = process.env.PORT || 5060
-process.env.NODE_ENV = 'production'
-
 const { Nuxt, Builder } = require('nuxt')
 const request = require('request-promise-native')
 
 const config = require('./fixture/nuxt.config')
 
-const url = path => `http://localhost:${process.env.PORT}${path}`
+const url = path => `http://localhost:3000${path}`
 const get = path => request(url(path))
 
 describe('basic', () => {
@@ -16,8 +12,8 @@ describe('basic', () => {
   beforeAll(async () => {
     nuxt = new Nuxt(config)
     await new Builder(nuxt).build()
-    await nuxt.listen(process.env.PORT)
-  })
+    await nuxt.listen(3000)
+  }, 60000)
 
   afterAll(async () => {
     await nuxt.close()
