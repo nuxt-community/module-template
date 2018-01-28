@@ -23,9 +23,7 @@
   "files": ["lib"],
   "jest": {
     "testEnvironment": "node",
-    "coverageDirectory": "./coverage/",
-    "collectCoverage": true,
-    "collectCoverageFrom": ["lib", "test"]
+    "collectCoverage": true
   },
   "dependencies": {},
   "devDependencies": {
