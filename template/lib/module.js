@@ -9,3 +9,4 @@ module.exports = async function module (moduleOptions) {
   //   options
   // })
 }
+module.exports.meta = require('../package.json')
