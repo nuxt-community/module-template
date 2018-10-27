@@ -27,7 +27,7 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "nuxt": "latest",
+    "nuxt-edge": "latest",
     "codecov": "latest",
     "eslint": "latest",
     "eslint-config-standard": "latest",
