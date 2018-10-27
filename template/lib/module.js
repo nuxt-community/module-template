@@ -4,7 +4,7 @@ async function nuxtModule (moduleOptions) {
   // const options = Object.assign({}, moduleOptions)
 
   // this.addPlugin({
-  //   src: resolve(__dirname, 'templates/plugin.js'),
+  //   src: resolve(__dirname, 'plugin.js'),
   //   fileName: '{{ name }}.js',
   //   options
   // })

@@ -1,11 +1,13 @@
 const { resolve } = require('path')
 
 module.exports = {
-  rootDir: resolve(__dirname, '../..'),
+  rootDir: resolve(__dirname, '..'),
+  buildDIr: resolve(__dirname, '.nuxt'),
   srcDir: __dirname,
-  dev: false,
   render: {
     resourceHints: false
   },
-  modules: ['@@']
+  modules: [
+    '@@'
+  ]
 }
