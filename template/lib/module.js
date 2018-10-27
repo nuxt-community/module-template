@@ -1,6 +1,6 @@
 // const { resolve } = require('path')
 
-module.exports = async function module (moduleOptions) {
+async function nuxtModule (moduleOptions) {
   // const options = Object.assign({}, moduleOptions)
 
   // this.addPlugin({
@@ -9,4 +9,6 @@ module.exports = async function module (moduleOptions) {
   //   options
   // })
 }
+
+module.exports = nuxtModule
 module.exports.meta = require('../package.json')
