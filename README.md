@@ -17,7 +17,7 @@ Make sure to use a version of vue-cli >= 2.1 (vue -V) is installed.
 If you don't already have it, just install it.
 
 ```bash
-vue init nuxt-community/module-template <module-name>
+npx vue init nuxt-community/module-template <module-name>
 cd <module-name>
 yarn install # or npm install
 ```
