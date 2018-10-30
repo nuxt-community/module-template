@@ -31,6 +31,7 @@
   },
   "dependencies": {},
   "devDependencies": {
+    "babel-eslint": "latest",
     "nuxt-edge": "latest",
     "codecov": "latest",
     "eslint": "latest",
