@@ -32,7 +32,6 @@
   "dependencies": {},
   "devDependencies": {
     "babel-eslint": "latest",
-    "nuxt-edge": "latest",
     "codecov": "latest",
     "eslint": "latest",
     "eslint-config-standard": "latest",
@@ -44,6 +43,7 @@
     "eslint-plugin-vue": "latest",
     "jest": "latest",
     "jsdom": "latest",
+    "nuxt-edge": "latest",
     "standard-version": "latest"
   }
 }
