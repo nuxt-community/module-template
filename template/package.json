@@ -43,6 +43,9 @@
     "collectCoverageFrom": [
       "lib/**/*.js"
     ],
+    "moduleNameMapper": {
+      "^@@$": "<rootDir>"
+    },
     "transform": {
       "^.+\\.js$": "babel-jest"
     }
