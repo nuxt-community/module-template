@@ -25,13 +25,33 @@
   "files": [
     "lib"
   ],
+  "babel": {
+    "presets": [
+      [
+        "env",
+        {
+          "targets": {
+            "esmodules": true
+          }
+        }
+      ]
+    ]
+  },
   "jest": {
     "testEnvironment": "node",
-    "collectCoverage": true
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "lib/**/*.js"
+    ],
+    "transform": {
+      "^.+\\.js$": "babel-jest"
+    }
   },
   "dependencies": {},
   "devDependencies": {
     "babel-eslint": "latest",
+    "babel-jest": "latest",
+    "babel-preset-env": "latest",
     "codecov": "latest",
     "eslint": "latest",
     "eslint-config-standard": "latest",
