@@ -62,7 +62,7 @@
     "hooks": {
       "commit-msg": "commitlint -e $GIT_PARAMS",
       "pre-commit": "yarn test",
-      "pre-push": "yarn t"
+      "pre-push": "yarn test"
     }
   },
   "dependencies": {},
