@@ -25,13 +25,40 @@
   "files": [
     "lib"
   ],
+  "babel": {
+    "presets": [
+      [
+        "@babel/preset-env",
+        {
+          "targets": {
+            "esmodules": true
+          }
+        }
+      ]
+    ]
+  },
   "jest": {
     "testEnvironment": "node",
-    "collectCoverage": true
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "lib/**/*.js"
+    ],
+    "moduleNameMapper": {
+      "^~/(.*)$": "<rootDir>/lib/$1",
+      "^~~$": "<rootDir>",
+      "^@@$": "<rootDir>",
+      "^@/(.*)$": "<rootDir>/lib/$1"
+    },
+    "transform": {
+      "^.+\\.js$": "babel-jest"
+    }
   },
   "dependencies": {},
   "devDependencies": {
+    "@babel/core": "latest",
+    "@babel/preset-env": "latest",
     "babel-eslint": "latest",
+    "babel-jest": "latest",
     "codecov": "latest",
     "eslint": "latest",
     "eslint-config-standard": "latest",
@@ -42,8 +69,9 @@
     "eslint-plugin-standard": "latest",
     "eslint-plugin-vue": "latest",
     "jest": "latest",
-    "jsdom": "latest",
     "nuxt-edge": "latest",
+    "request": "latest",
+    "request-promise-native": "latest",
     "standard-version": "latest"
   }
 }
