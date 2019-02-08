@@ -19,58 +19,16 @@
     "test": "npm run lint && jest",
     "release": "standard-version && git push --follow-tags && npm publish"
   },
-  "eslintIgnore": [
-    "lib/plugin.js"
-  ],
   "files": [
     "lib"
   ],
-  "babel": {
-    "presets": [
-      [
-        "@babel/preset-env",
-        {
-          "targets": {
-            "esmodules": true
-          }
-        }
-      ]
-    ]
-  },
-  "jest": {
-    "testEnvironment": "node",
-    "collectCoverage": true,
-    "collectCoverageFrom": [
-      "lib/**/*.js"
-    ],
-    "moduleNameMapper": {
-      "^~/(.*)$": "<rootDir>/lib/$1",
-      "^~~$": "<rootDir>",
-      "^@@$": "<rootDir>",
-      "^@/(.*)$": "<rootDir>/lib/$1"
-    },
-    "transform": {
-      "^.+\\.js$": "babel-jest"
-    }
-  },
-  "commitlint": {
-    "extends": [
-      "@commitlint/config-conventional"
-    ]
-  },
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -e $GIT_PARAMS",
-      "pre-commit": "yarn test",
-      "pre-push": "yarn test"
-    }
-  },
   "dependencies": {},
   "devDependencies": {
     "@babel/core": "latest",
     "@babel/preset-env": "latest",
     "@commitlint/cli": "latest",
     "@commitlint/config-conventional": "latest",
+    "@nuxtjs/eslint-config": "latest",
     "babel-eslint": "latest",
     "babel-jest": "latest",
     "codecov": "latest",
