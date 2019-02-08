@@ -1,9 +1,12 @@
+jest.setTimeout(60000)
+process.env.PORT = process.env.PORT || 5060
+
 const { Nuxt, Builder } = require('nuxt-edge')
 const request = require('request-promise-native')
 
 const config = require('../example/nuxt.config')
 
-const url = path => `http://localhost:3000${path}`
+const url = path => `http://localhost:${process.env.PORT}${path}`
 const get = path => request(url(path))
 
 describe('basic', () => {
@@ -13,8 +16,8 @@ describe('basic', () => {
     config.dev = false
     nuxt = new Nuxt(config)
     await new Builder(nuxt).build()
-    await nuxt.listen(3000)
-  }, 60000)
+    await nuxt.listen(process.env.PORT)
+  })
 
   afterAll(async () => {
     await nuxt.close()
