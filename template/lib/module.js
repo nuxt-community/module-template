@@ -1,6 +1,6 @@
 // const { resolve } = require('path')
 
-async function nuxtModule (moduleOptions) {
+async function nuxtModule(moduleOptions) {
   // const options = Object.assign({}, moduleOptions)
 
   // this.addPlugin({
