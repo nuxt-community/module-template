@@ -3,7 +3,7 @@ const { resolve } = require('path')
 module.exports = async function (moduleOptions) {
   const options = {
     ...{},
-    ...this.options['{{ name }}']
+    ...this.options['{{ name }}'],
     ...moduleOptions
   }
 
