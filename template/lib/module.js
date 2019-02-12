@@ -1,7 +1,11 @@
 const { resolve } = require('path')
 
 module.exports = async function (moduleOptions) {
-  const options = Object.assign({}, moduleOptions)
+  const options = {
+    ...{},
+    ...this.options['{{ name }}']
+    ...moduleOptions
+  }
 
   this.addPlugin({
     src: resolve(__dirname, 'plugin.js'),
