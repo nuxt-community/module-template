@@ -1,6 +1,6 @@
 <template>
   <div>
-      Works!
+    Works!
   </div>
 </template>
 
