@@ -4,12 +4,12 @@ process.env.PORT = process.env.PORT || 5060
 const { Nuxt, Builder } = require('nuxt-edge')
 const request = require('request-promise-native')
 
-const config = require('../example/nuxt.config')
+const config = require('./fixture/nuxt.config')
 
 const url = path => `http://localhost:${process.env.PORT}${path}`
 const get = path => request(url(path))
 
-describe('basic', () => {
+describe('module', () => {
   let nuxt
 
   beforeAll(async () => {
