@@ -13,8 +13,8 @@
 
 ## Setup
 
-1. Add `{{ name }}` dependency with `yarn` or `npm` into your project
-2. Add `{{ name }}` to `modules` section of `nuxt.config.js`
+1. Add the `{{ name }}` dependency with `yarn` or `npm` into your project
+2. Add `{{ name }}` to the `modules` section of `nuxt.config.js`
 3. Configure it:
 
 ```js
