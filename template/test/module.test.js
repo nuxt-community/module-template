@@ -5,6 +5,7 @@ const request = require('request-promise-native')
 const getPort = require('get-port')
 
 const config = require('../example/nuxt.config')
+config.dev = false
 
 let nuxt, port
 
@@ -13,7 +14,6 @@ const get = path => request(url(path))
 
 describe('basic', () => {
   beforeAll(async () => {
-    config.dev = false
     nuxt = new Nuxt(config)
     await new Builder(nuxt).build()
     port = await getPort()
