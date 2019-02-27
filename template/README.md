@@ -24,8 +24,8 @@
     '{{ name }}',
 
     // With options
-    ['{{ name }}', { /* module options */ }],
- ]
+    ['{{ name }}', { /* module options */ }]
+  ]
 }
 ```
 
