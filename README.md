@@ -22,15 +22,28 @@ cd <module-name>
 yarn install # or npm install
 ```
 
-Then, just head to [Modules Guide](https://nuxtjs.org/guide/modules) for more help and don't forget to submit a PR in [awesome-nuxt](https://github.com/nuxt-community/awesome-nuxt) when your module was ready ;)
+Then, just head to [Modules Guide](https://nuxtjs.org/guide/modules) for more help.
 
 ## Development
+
 For easier development you can use [yarn link](https://yarnpkg.com/lang/en/docs/cli/link/) or [npm link](https://docs.npmjs.com/cli/link)
-to link to your project. Then start build using `npm run dev`. To version & publish module:
+to link to your project.
+
+Then start build using `npm run dev`.
+
+## Publishing
 
 ```bash
 npm run release
 ```
+
+## Getting known
+
+Don't forget to:
+1. Add [nuxt-module]() Github topic
+2. Submit a PR in [awesome-nuxt](https://github.com/nuxt-community/awesome-nuxt) when your module was ready ;)
+3. Mention us when you have your first release on our Twitter ([@nuxt_js](https://twitter.com/nuxt_js))
+
 
 ## Licenses
 
