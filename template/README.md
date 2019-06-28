@@ -16,7 +16,7 @@
 1. Add `{{ name }}` dependency to your project
 
 ```bash
-npm install --save {{ name }} # or yarn add {{ name }}
+yarn add {{ name }} # or npm install {{ name }}
 ```
 
 2. Add `{{ name }}` to the `modules` section of `nuxt.config.js`
