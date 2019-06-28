@@ -13,9 +13,13 @@
 
 ## Setup
 
-1. Add the `{{ name }}` dependency with `yarn` or `npm` to your project
+1. Add `{{ name }}` dependency to your project
+
+```bash
+yarn add {{ name }} # or npm install {{ name }}
+```
+
 2. Add `{{ name }}` to the `modules` section of `nuxt.config.js`
-3. Configure it:
 
 ```js
 {
