@@ -40,12 +40,12 @@ npm run release
 ## Getting known
 
 Don't forget to:
-1. Add [nuxt-module]() Github topic
+1. Add [nuxt-module](https://github.com/topics/nuxt-module) Github topic
 2. Submit a PR in [awesome-nuxt](https://github.com/nuxt-community/awesome-nuxt) when your module was ready ;)
 3. Mention us when you have your first release on our Twitter ([@nuxt_js](https://twitter.com/nuxt_js))
 
 
 ## Licenses
 
-- [NuxtJS license](https://github.com/nuxt/nuxt.js/blob/master/LICENSE.md)
+- [NuxtJS license](https://github.com/nuxt/nuxt.js/blob/dev/LICENSE)
 - [VueJS license](https://github.com/vuejs/vue/blob/master/LICENSE)
