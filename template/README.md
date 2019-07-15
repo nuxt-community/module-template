@@ -4,8 +4,7 @@
 [![npm downloads][npm-downloads-src]][npm-downloads-href]
 [![Circle CI][circle-ci-src]][circle-ci-href]
 [![Codecov][codecov-src]][codecov-href]
-[![Dependencies][david-dm-src]][david-dm-href]
-[![Standard JS][standard-js-src]][standard-js-href]
+[![License][license-src]][license-href]
 
 > {{ description }}
 
@@ -46,10 +45,10 @@ yarn add {{ name }} # or npm install {{ name }}
 Copyright (c) {{ author }}
 
 <!-- Badges -->
-[npm-version-src]: https://img.shields.io/npm/dt/{{ name }}.svg?style=flat-square
+[npm-version-src]: https://img.shields.io/npm/v/{{ name }}/latest.svg?style=flat-square
 [npm-version-href]: https://npmjs.com/package/{{ name }}
 
-[npm-downloads-src]: https://img.shields.io/npm/v/{{ name }}/latest.svg?style=flat-square
+[npm-downloads-src]: https://img.shields.io/npm/dt/{{ name }}.svg?style=flat-square
 [npm-downloads-href]: https://npmjs.com/package/{{ name }}
 
 [circle-ci-src]: https://img.shields.io/circleci/project/github/{{ github }}.svg?style=flat-square
@@ -58,8 +57,5 @@ Copyright (c) {{ author }}
 [codecov-src]: https://img.shields.io/codecov/c/github/{{ github }}.svg?style=flat-square
 [codecov-href]: https://codecov.io/gh/{{ github }}
 
-[david-dm-src]: https://david-dm.org/{{ github }}/status.svg?style=flat-square
-[david-dm-href]: https://david-dm.org/{{ github }}
-
-[standard-js-src]: https://img.shields.io/badge/code_style-standard-brightgreen.svg?style=flat-square
-[standard-js-href]: https://standardjs.com
+[license-src]: https://img.shields.io/npm/l/{{ name }}.svg?style=flat-square
+[license-href]: https://npmjs.com/package/{{ name }}
