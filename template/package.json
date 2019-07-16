@@ -9,7 +9,7 @@
     }
   ],
   "main": "lib/module.js",
-  "repository": "https://github.com/{{ github }}",
+  "repository": "{{ github }}",
   "publishConfig": {
     "access": "public"
   },
