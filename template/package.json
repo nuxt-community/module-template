@@ -2,26 +2,23 @@
   "name": "{{ name }}",
   "version": "0.0.0",
   "description": "{{ description }}",
+  "repository": "{{ github }}",
   "license": "MIT",
   "contributors": [
     {
       "name": "{{ author }}"
     }
   ],
-  "main": "lib/module.js",
-  "repository": "{{ github }}",
-  "publishConfig": {
-    "access": "public"
-  },
-  "scripts": {
-    "dev": "nuxt example",
-    "lint": "eslint --ext .js,.vue example lib test",
-    "test": "yarn lint && jest",
-    "release": "yarn test && standard-version && git push --follow-tags && npm publish"
-  },
   "files": [
     "lib"
   ],
+  "main": "lib/module.js",
+  "scripts": {
+    "dev": "nuxt example",
+    "lint": "eslint --ext .js,.vue example lib test",
+    "release": "yarn test && standard-version && git push --follow-tags && npm publish",
+    "test": "yarn lint && jest"
+  },
   "dependencies": {},
   "devDependencies": {
     "@babel/core": "latest",
@@ -29,16 +26,17 @@
     "@commitlint/cli": "latest",
     "@commitlint/config-conventional": "latest",
     "@nuxtjs/eslint-config": "latest",
+    "@nuxtjs/module-test-utils": "latest",
     "babel-eslint": "latest",
     "babel-jest": "latest",
     "codecov": "latest",
     "eslint": "latest",
-    "get-port": "latest",
     "husky": "latest",
     "jest": "latest",
     "nuxt-edge": "latest",
-    "request": "latest",
-    "request-promise-native": "latest",
     "standard-version": "latest"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
