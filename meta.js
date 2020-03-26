@@ -5,7 +5,7 @@ module.exports = {
     },
     skipInterpolation: [
       "**/*.vue",
-      ".circleci/*.*"
+      ".github/*.*"
     ],
     prompts: {
       name: {

@@ -2,7 +2,7 @@
 
 [![npm version][npm-version-src]][npm-version-href]
 [![npm downloads][npm-downloads-src]][npm-downloads-href]
-[![Circle CI][circle-ci-src]][circle-ci-href]
+[![Github Actions CI][github-actions-ci-src]][github-actions-ci-href]
 [![Codecov][codecov-src]][codecov-href]
 [![License][license-src]][license-href]
 
@@ -45,17 +45,17 @@ yarn add {{ name }} # or npm install {{ name }}
 Copyright (c) {{ author }}
 
 <!-- Badges -->
-[npm-version-src]: https://img.shields.io/npm/v/{{ name }}/latest.svg?style=flat-square
+[npm-version-src]: https://img.shields.io/npm/v/{{ name }}/latest.svg
 [npm-version-href]: https://npmjs.com/package/{{ name }}
 
-[npm-downloads-src]: https://img.shields.io/npm/dt/{{ name }}.svg?style=flat-square
+[npm-downloads-src]: https://img.shields.io/npm/dt/{{ name }}.svg
 [npm-downloads-href]: https://npmjs.com/package/{{ name }}
 
-[circle-ci-src]: https://img.shields.io/circleci/project/github/{{ github }}.svg?style=flat-square
-[circle-ci-href]: https://circleci.com/gh/{{ github }}
+[github-actions-ci-src]: https://github.com/{{ github }}/workflows/ci/badge.svg
+[github-actions-ci-href]: https://github.com/{{ github }}/actions?query=workflow%3Aci
 
-[codecov-src]: https://img.shields.io/codecov/c/github/{{ github }}.svg?style=flat-square
+[codecov-src]: https://img.shields.io/codecov/c/github/{{ github }}.svg
 [codecov-href]: https://codecov.io/gh/{{ github }}
 
-[license-src]: https://img.shields.io/npm/l/{{ name }}.svg?style=flat-square
+[license-src]: https://img.shields.io/npm/l/{{ name }}.svg
 [license-href]: https://npmjs.com/package/{{ name }}
