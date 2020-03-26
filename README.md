@@ -7,7 +7,7 @@
 - ESLint
 - Ready tests using [Jest](https://facebook.github.io/jest)
 - Code coverage
-- Circle CI
+- Github Actions
 - Standard Version
 
 ## Create a Nuxt Module
