@@ -5,7 +5,7 @@ module.exports = {
     },
     skipInterpolation: [
       "**/*.vue",
-      ".github/*.*"
+      ".github/workflows/*.*"
     ],
     prompts: {
       name: {
