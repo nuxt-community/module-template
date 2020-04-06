@@ -29,7 +29,6 @@
     "@nuxtjs/module-test-utils": "latest",
     "babel-eslint": "latest",
     "babel-jest": "latest",
-    "codecov": "latest",
     "eslint": "latest",
     "husky": "latest",
     "jest": "latest",
