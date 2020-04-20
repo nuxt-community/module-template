@@ -5,7 +5,7 @@
 ## Features
 
 - ESLint
-- Ready tests using [Jest](https://facebook.github.io/jest)
+- Ready tests using [Ava](https://ava.li)
 - Code coverage
 - Github Actions
 - Standard Version
