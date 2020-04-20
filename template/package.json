@@ -12,27 +12,39 @@
   "files": [
     "lib"
   ],
+  "private": false,
   "main": "lib/module.js",
   "scripts": {
     "dev": "nuxt example",
     "lint": "eslint --ext .js,.vue .",
     "release": "npm run test && standard-version && git push --follow-tags && npm publish",
     "test": "npm run lint && npm run test:unit && npm run test:e2e",
+    "test:unit": "cross-env TEST=unit nyc ava --config unit-tests.config.cjs",
+    "test:e2e": "cross-env TEST=e2e ava --config e2e-tests.config.cjs",
+    "test:snapshot": "cross-env TEST=unit ava --update-snapshots"
   },
   "dependencies": {},
   "devDependencies": {
+    "@ava/babel": "latest",
     "@babel/core": "latest",
     "@babel/preset-env": "latest",
     "@commitlint/cli": "latest",
     "@commitlint/config-conventional": "latest",
     "@nuxtjs/eslint-config": "latest",
-    "@nuxtjs/module-test-utils": "latest",
+    "@vue/test-utils": "latest",
+    "ava": "latest",
     "babel-eslint": "latest",
-    "babel-jest": "latest",
+    "babel-plugin-module-resolver": "latest",
+    "browser-env": "latest",
+    "cross-env": "latest",
     "eslint": "latest",
     "husky": "latest",
-    "jest": "latest",
+    "jsdom-global": "latest",
     "nuxt-edge": "latest",
+    "nyc": "latest",
+    "require-extension-hooks": "latest",
+    "require-extension-hooks-babel": "latest",
+    "require-extension-hooks-vue": "latest",
     "standard-version": "latest"
   },
   "publishConfig": {
