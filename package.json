@@ -1,4 +1,37 @@
 {
-    "name": "nuxt-module-template",
-    "version": "0.0.0"
+  "name": "npm_package",
+  "version": "0.0.0",
+  "description": "",
+  "repository": "github_repo",
+  "license": "MIT",
+  "files": [
+    "lib"
+  ],
+  "main": "lib/module.js",
+  "scripts": {
+    "dev": "nuxt example",
+    "lint": "eslint --ext .js,.vue .",
+    "release": "yarn test && standard-version && git push --follow-tags && npm publish",
+    "test": "yarn lint && jest"
+  },
+  "dependencies": {
+    "defu": "^2.0.2"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "latest",
+    "@nuxtjs/eslint-config": "latest",
+    "@nuxtjs/module-test-utils": "latest",
+    "babel-eslint": "latest",
+    "babel-jest": "latest",
+    "eslint": "latest",
+    "get-port": "^5.1.1",
+    "jest": "latest",
+    "nuxt-edge": "latest",
+    "puppeteer": "^3.0.0",
+    "standard-version": "latest",
+    "tib": "latest"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
 }

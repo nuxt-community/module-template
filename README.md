@@ -1,51 +1,56 @@
-# Module Template for Nuxt.js
+# npm_package
 
-> Nuxt.js module template
+[![npm version][npm-version-src]][npm-version-href]
+[![npm downloads][npm-downloads-src]][npm-downloads-href]
+[![Github Actions CI][github-actions-ci-src]][github-actions-ci-href]
+[![Codecov][codecov-src]][codecov-href]
+[![License][license-src]][license-href]
 
-## Features
+[📖 **Release Notes**](./CHANGELOG.md)
 
-- ESLint
-- Ready tests using [Jest](https://facebook.github.io/jest)
-- Code coverage
-- Github Actions
-- Standard Version
+## Setup
 
-## Create a Nuxt Module
-
-This is a template for [vue-cli](https://github.com/vuejs/vue-cli).
-Make sure to use a version of vue-cli >= 2.1 (vue -V) is installed.
-If you don't already have it, just install it.
+1. Add `npm_package` dependency to your project
 
 ```bash
-npx vue-cli init nuxt-community/module-template <module-name>
-cd <module-name>
-yarn install # or npm install
+yarn add npm_package # or npm install npm_package
 ```
 
-Then, just head to [Modules Guide](https://nuxtjs.org/guide/modules) for more help.
+2. Add `npm_package` to the `modules` section of `nuxt.config.js`
+
+```js
+{
+  modules: [
+    'npm_package',
+  ],
+  myModule: {
+    // module options
+  }
+}
+```
 
 ## Development
 
-For easier development you can use [yarn link](https://yarnpkg.com/lang/en/docs/cli/link/) or [npm link](https://docs.npmjs.com/cli/link)
-to link to your project.
+1. Clone this repository
+2. Install dependencies using `yarn install` or `npm install`
+3. Start development server using `npm run dev`
 
-Then start build using `npm run dev`.
+## License
 
-## Publishing
+[MIT License](./LICENSE)
 
-```bash
-npm run release
-```
+<!-- Badges -->
+[npm-version-src]: https://img.shields.io/npm/v/npm_package/latest.svg
+[npm-version-href]: https://npmjs.com/package/npm_package
 
-## Getting known
+[npm-downloads-src]: https://img.shields.io/npm/dt/npm_package.svg
+[npm-downloads-href]: https://npmjs.com/package/npm_package
 
-Don't forget to:
-1. Add [nuxt-module](https://github.com/topics/nuxt-module) Github topic
-2. Submit a PR in [awesome-nuxt](https://github.com/nuxt-community/awesome-nuxt) when your module was ready ;)
-3. Mention us when you have your first release on our Twitter ([@nuxt_js](https://twitter.com/nuxt_js))
+[github-actions-ci-src]: https://github.com/github_repo/workflows/ci/badge.svg
+[github-actions-ci-href]: https://github.com/github_repo/actions?query=workflow%3Aci
 
+[codecov-src]: https://img.shields.io/codecov/c/github/github_repo.svg
+[codecov-href]: https://codecov.io/gh/github_repo
 
-## Licenses
-
-- [NuxtJS license](https://github.com/nuxt/nuxt.js/blob/dev/LICENSE)
-- [VueJS license](https://github.com/vuejs/vue/blob/master/LICENSE)
+[license-src]: https://img.shields.io/npm/l/npm_package.svg
+[license-href]: https://npmjs.com/package/npm_package
