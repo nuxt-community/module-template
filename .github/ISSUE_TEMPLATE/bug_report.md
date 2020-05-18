@@ -25,7 +25,9 @@ nuxt: <!-- ex: 2.0.0 -->
 -->
 
 ### Reproduction link
-<!-- A minimal test case on https://template.nuxtjs.org/ or GitHub reprository that can reproduce the bug. -->
+<!-- A minimal test case on https://template.nuxtjs.org/ or GitHub repository that can properly reproduce the bug. -->
+<!-- A proper reproduction is very important, as it helps us troubleshoot -->
+<!-- We will not consider jsfiddle/jsbin/codepen as a proper reproduction -->
 
 ### Steps to reproduce
 
