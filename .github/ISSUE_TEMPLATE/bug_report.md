@@ -24,7 +24,7 @@ nuxt: <!-- ex: 2.0.0 -->
 ```
 -->
 
-### Reproduction Link
+### Reproduction link
 <!-- A minimal test case on https://template.nuxtjs.org/ or GitHub reprository that can reproduce the bug. -->
 
 ### Steps to reproduce
