@@ -8,7 +8,7 @@ assignees: ''
 ---
 
 ### Version
-{{ name }}: <!-- ex: 5.9.0 -->
+module: <!-- ex: 5.9.0 -->
 nuxt: <!-- ex: 2.0.0 -->
 
 ### Nuxt configuration
@@ -16,7 +16,7 @@ nuxt: <!-- ex: 2.0.0 -->
  - [ ] universal
  - [ ] spa
 
-### Nuxt configuration for {{ name }}
+### Nuxt configuration
 <!--
     If relevant, please include the configuration you are using for this module.
     For example:
@@ -24,10 +24,21 @@ nuxt: <!-- ex: 2.0.0 -->
 ```
 -->
 
-### Reproduction link
-<!-- A minimal test case on https://template.nuxtjs.org/ or GitHub repository that can properly reproduce the bug. -->
-<!-- A proper reproduction is very important, as it helps us troubleshoot -->
-<!-- We will not consider jsfiddle/jsbin/codepen as a proper reproduction -->
+## Reproduction
+> :warning: without a minimal reproduction we wont be able to look into your issue
+
+**Link:** 
+[ ] https:///codesandbox.io/
+[ ] GitHub repository
+
+#### What is expected?
+#### What is actually happening?
+#### Steps to reproduce
+## Additional information
+## Checklist
+* [ ]  I have tested with the latest Nuxt version and the issue still occurs
+* [ ]  I have tested with the latest module version and the issue still occurs
+* [ ]  I have searched the issue tracker and this issue hasn't been reported yet
 
 ### Steps to reproduce
 
