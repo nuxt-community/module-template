@@ -1799,7 +1799,7 @@
     eslint-plugin-prettier "^3.1.4"
     eslint-plugin-promise "^4.2.1"
 
-"@siroc/jest-preset@0.2.0":
+"@siroc/jest-preset@0.2.0", "@siroc/jest-preset@latest":
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/@siroc/jest-preset/-/jest-preset-0.2.0.tgz#eec0162ce1a67cd2039b7ef8cf5c7704d0b2ae74"
   integrity sha512-rkHYWq+uP076pNFyzi08NFdR+nrY5t8jCFa1gZT4jlqtTbAlYWzE8N5ze0j5VfEPMbdYyAqsHw4WM697IdBJ8g==

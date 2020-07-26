@@ -24,6 +24,7 @@
     "@nuxt/types": "latest",
     "@nuxtjs/eslint-config-typescript": "^2.0.0",
     "@nuxtjs/module-test-utils": "latest",
+    "@siroc/jest-preset": "latest",
     "@types/jest": "^26.0.7",
     "babel-eslint": "latest",
     "babel-jest": "latest",
