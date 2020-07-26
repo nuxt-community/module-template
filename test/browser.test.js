@@ -1,4 +1,4 @@
-import { setupTest, createPage } from './utils'
+import { setupTest, createPage } from '@nuxtjs/module-test-utils'
 
 describe('module', () => {
   const ctx = setupTest({

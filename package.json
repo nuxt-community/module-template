@@ -24,12 +24,9 @@
     "babel-eslint": "latest",
     "babel-jest": "latest",
     "eslint": "latest",
-    "get-port": "^5.1.1",
     "jest": "latest",
     "nuxt-edge": "latest",
-    "puppeteer": "^3.0.0",
-    "standard-version": "latest",
-    "tib": "latest"
+    "standard-version": "latest"
   },
   "publishConfig": {
     "access": "public"
