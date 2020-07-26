@@ -1,8 +1,5 @@
 module.exports = {
-  testEnvironment: 'node',
+  preset: '@siroc/jest-preset',
   collectCoverage: true,
-  collectCoverageFrom: [
-    'lib/**',
-    '!lib/templates/**'
-  ]
+  collectCoverageFrom: ['lib/**', '!lib/templates/**']
 }

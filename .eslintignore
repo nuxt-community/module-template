@@ -2,7 +2,9 @@
 node_modules
 dist
 .nuxt
+example
 coverage
+lib
 
 # Templates
-lib/templates/*
+src/templates/*
