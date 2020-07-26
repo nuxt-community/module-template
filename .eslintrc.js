@@ -1,3 +1,3 @@
 module.exports = {
-  extends: ['@siroc']
+  extends: ['@nuxtjs/eslint-config-typescript']
 }

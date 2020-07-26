@@ -5,7 +5,7 @@ import { Module } from '@nuxt/types'
 
 type NuxtModuleOptions = Record<string, any>
 
-const nuxtModule: Module<NuxtModuleOptions> = /* async */ function(
+const nuxtModule: Module<NuxtModuleOptions> = /* async */ function (
   moduleOptions
 ) {
   const options = defu<NuxtModuleOptions>(
