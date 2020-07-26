@@ -4,10 +4,10 @@
   "description": "",
   "repository": "github_repo",
   "license": "MIT",
-  "main": "lib/module.js",
-  "types": "lib/module.d.ts",
+  "main": "dist/module.js",
+  "types": "dist/module.d.ts",
   "files": [
-    "lib",
+    "dist",
     "templates"
   ],
   "scripts": {
