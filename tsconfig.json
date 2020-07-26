@@ -1,18 +1,25 @@
 {
   "compilerOptions": {
     "strict": true,
-    "sourceMap": true,
     "target": "es2018",
     "module": "esnext",
-    "lib": ["esnext"],
+    "lib": [
+      "esnext",
+      "dom"
+    ],
     "esModuleInterop": true,
     "moduleResolution": "node",
-    "outDir": "lib",
     "declaration": false,
     "skipLibCheck": true,
     "resolveJsonModule": true,
     "allowSyntheticDefaultImports": true,
-    "types": ["node", "jest"]
+    "types": [
+      "node",
+      "jest"
+    ]
   },
-  "exclude": ["node_modules", "lib"]
+  "exclude": [
+    "node_modules",
+    "lib"
+  ]
 }
