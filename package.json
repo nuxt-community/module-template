@@ -2,34 +2,45 @@
   "name": "npm_package",
   "version": "0.0.0",
   "description": "",
+  "keywords": [
+    "nuxt",
+    "module",
+    "nuxt-module"
+  ],
   "repository": "github_repo",
   "license": "MIT",
+  "main": "dist/module.js",
+  "types": "dist/module.d.ts",
   "files": [
-    "lib"
+    "dist",
+    "templates"
   ],
-  "main": "lib/module.js",
   "scripts": {
+    "build": "siroc build",
     "dev": "nuxt example",
-    "lint": "eslint --ext .js,.vue .",
-    "release": "yarn test && standard-version && git push --follow-tags && npm publish",
+    "lint": "eslint --ext .js,.ts,.vue .",
+    "release": "yarn build && yarn test && standard-version && git push --follow-tags && npm publish",
     "test": "yarn lint && jest"
   },
   "dependencies": {
-    "defu": "^2.0.2"
+    "defu": "^2.0.4"
   },
   "devDependencies": {
+    "@babel/plugin-transform-runtime": "latest",
     "@babel/preset-env": "latest",
-    "@nuxtjs/eslint-config": "latest",
+    "@babel/preset-typescript": "latest",
+    "@nuxt/types": "latest",
+    "@nuxtjs/eslint-config-typescript": "^2.0.0",
     "@nuxtjs/module-test-utils": "latest",
+    "@siroc/jest-preset": "latest",
+    "@types/jest": "^26.0.7",
     "babel-eslint": "latest",
     "babel-jest": "latest",
     "eslint": "latest",
-    "get-port": "^5.1.1",
     "jest": "latest",
     "nuxt-edge": "latest",
-    "puppeteer": "^3.0.0",
-    "standard-version": "latest",
-    "tib": "latest"
+    "siroc": "latest",
+    "standard-version": "latest"
   },
   "publishConfig": {
     "access": "public"

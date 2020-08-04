@@ -5,4 +5,4 @@ dist
 coverage
 
 # Templates
-lib/templates/*
+templates/*
