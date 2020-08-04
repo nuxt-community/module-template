@@ -1,5 +1,7 @@
 import _module from '..'
 
 export default {
-  modules: [_module]
+  modules: [
+    _module
+  ]
 }
