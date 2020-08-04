@@ -8,7 +8,7 @@ describe('module', () => {
   })
 
   test('browser', async () => {
-    const page = await createPage(ctx, '/')
+    const page = await createPage('/')
     const html = await page.getHtml()
     expect(html).toContain('Works!')
   })

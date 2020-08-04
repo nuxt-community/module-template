@@ -31,7 +31,7 @@
     "@babel/preset-typescript": "latest",
     "@nuxt/types": "latest",
     "@nuxtjs/eslint-config-typescript": "latest",
-    "@nuxtjs/module-test-utils": "2.0.0-0",
+    "@nuxtjs/module-test-utils": "2.0.0-1",
     "@siroc/jest-preset": "latest",
     "@types/jest": "latest",
     "babel-eslint": "latest",
@@ -39,6 +39,7 @@
     "eslint": "latest",
     "jest": "latest",
     "nuxt-edge": "latest",
+    "puppeteer": "^5.2.1",
     "siroc": "latest",
     "standard-version": "latest"
   },
