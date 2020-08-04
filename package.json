@@ -2,6 +2,11 @@
   "name": "npm_package",
   "version": "0.0.0",
   "description": "",
+  "keywords": [
+    "nuxt",
+    "module",
+    "nuxt-module"
+  ],
   "repository": "github_repo",
   "license": "MIT",
   "main": "dist/module.js",

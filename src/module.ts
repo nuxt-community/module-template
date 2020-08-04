@@ -23,6 +23,8 @@ const nuxtModule: Module<NuxtModuleOptions> = /* async */ function (
 
 const DEFAULTS = {}
 
+;(nuxtModule as any).meta = require('../package.json')
+
 export default nuxtModule
 
 declare module '@nuxt/types' {
