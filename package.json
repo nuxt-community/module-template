@@ -5,9 +5,7 @@
   "keywords": [
     "nuxt",
     "module",
-    "nuxt-module",
-    "typescript",
-    "javascript"
+    "nuxt-module"
   ],
   "repository": "github_repo",
   "license": "MIT",
