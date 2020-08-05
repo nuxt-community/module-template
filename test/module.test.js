@@ -1,6 +1,7 @@
 import { setupTest } from '@nuxtjs/module-test-utils'
 
 describe('module', () => {
+  // eslint-disable-next-line
   const ctx = setupTest({
     __dirname,
     fixture: '../example',

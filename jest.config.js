@@ -9,5 +9,5 @@ module.exports = {
     ]
   },
   collectCoverage: true,
-  collectCoverageFrom: ['dist/**', '!templates/**']
+  collectCoverageFrom: ['src/**', '!templates/**']
 }
