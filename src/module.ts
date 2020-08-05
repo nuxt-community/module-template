@@ -2,11 +2,9 @@ import { resolve } from 'path'
 import defu from 'defu'
 import { Module } from '@nuxt/types'
 
-export interface ModuleOptions {
-}
-
-const CONFIG_KEY = 'myModule'
+export interface ModuleOptions {}
 const DEFAULTS: ModuleOptions = {}
+const CONFIG_KEY = 'myModule'
 
 const nuxtModule: Module<ModuleOptions> = /* async */ function (moduleOptions) {
   const options = defu<ModuleOptions>(this.options[CONFIG_KEY], moduleOptions, DEFAULTS)

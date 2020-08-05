@@ -1,8 +1,10 @@
-# Common
 node_modules
 dist
 .nuxt
 coverage
-
-# Templates
+*.log*
+.DS_Store
+.code
+*.iml
+package-lock.json
 templates/*

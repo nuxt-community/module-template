@@ -32,8 +32,8 @@ yarn add npm_package # or npm install npm_package
 ## Development
 
 1. Clone this repository
-2. Install dependencies using `yarn install` or `npm install`
-3. Start development server using `npm run dev`
+2. Install dependencies using `yarn install`
+3. Start development server using `yarn dev`
 
 ## License
 
@@ -43,7 +43,7 @@ yarn add npm_package # or npm install npm_package
 [npm-version-src]: https://img.shields.io/npm/v/npm_package/latest.svg
 [npm-version-href]: https://npmjs.com/package/npm_package
 
-[npm-downloads-src]: https://img.shields.io/npm/dt/npm_package.svg
+[npm-downloads-src]: https://img.shields.io/npm/dm/npm_package.svg
 [npm-downloads-href]: https://npmjs.com/package/npm_package
 
 [github-actions-ci-src]: https://github.com/github_repo/workflows/ci/badge.svg

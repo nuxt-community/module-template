@@ -40,7 +40,7 @@
     "eslint": "latest",
     "jest": "latest",
     "nuxt-edge": "latest",
-    "puppeteer": "^5.2.1",
+    "puppeteer": "latest",
     "siroc": "latest",
     "standard-version": "latest"
   },
