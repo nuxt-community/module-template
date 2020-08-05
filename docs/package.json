@@ -2,8 +2,7 @@
   "private": true,
   "scripts": {
     "dev": "nuxt",
-    "generate": "nuxt generate",
-    "now-build": "yarn generate"
+    "generate": "nuxt generate"
   },
   "devDependencies": {
     "@nuxt/content-theme-docs": "latest",
