@@ -8,9 +8,6 @@ module.exports = {
       }
     ]
   },
-  moduleNameMapper: {
-    npm_package: '<rootDir>/src/module.ts'
-  },
   collectCoverage: true,
   collectCoverageFrom: ['src/**', '!templates/**']
 }
