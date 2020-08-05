@@ -1,18 +1,16 @@
 import { resolve } from 'path'
 import defu from 'defu'
-
 import { Module } from '@nuxt/types'
 
-type NuxtModuleOptions = Record<string, any>
+export interface ModuleOptions {
+}
 
-const nuxtModule: Module<NuxtModuleOptions> = /* async */ function (
-  moduleOptions
-) {
-  const options = defu<NuxtModuleOptions>(
-    this.options.myModule,
-    moduleOptions,
-    DEFAULTS
-  )
+const CONFIG_KEY = 'myModule'
+const DEFAULTS: ModuleOptions = {}
+
+const nuxtModule: Module<ModuleOptions> = /* async */ function (moduleOptions) {
+  const options = defu<ModuleOptions>(this.options[CONFIG_KEY], moduleOptions, DEFAULTS)
+  // const { nuxt } = this
 
   this.addPlugin({
     src: resolve(__dirname, '../templates/plugin.js'),
@@ -21,19 +19,11 @@ const nuxtModule: Module<NuxtModuleOptions> = /* async */ function (
   })
 }
 
-const DEFAULTS = {}
-
 ;(nuxtModule as any).meta = require('../package.json')
 
-export default nuxtModule
-
 declare module '@nuxt/types' {
-  // Nuxt 2.14+
-  interface NuxtConfig {
-    myModule: NuxtModuleOptions
-  }
-  // Nuxt 2.9 - 2.13
-  interface Configuration {
-    myModule: NuxtModuleOptions
-  }
+  interface NuxtConfig { [CONFIG_KEY]: ModuleOptions } // Nuxt 2.14+
+  interface Configuration { [CONFIG_KEY]: ModuleOptions } // Nuxt 2.9 - 2.13
 }
+
+export default nuxtModule
