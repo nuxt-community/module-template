@@ -20,7 +20,7 @@ const nuxtModule: Module<ModuleOptions> = /* async */ function (moduleOptions) {
 ;(nuxtModule as any).meta = require('../package.json')
 
 declare module '@nuxt/types' {
-  interface NuxtConfig { [CONFIG_KEY]: ModuleOptions } // Nuxt 2.14+
+  interface NuxtOptions { [CONFIG_KEY]: ModuleOptions } // Nuxt 2.14+
   interface Configuration { [CONFIG_KEY]: ModuleOptions } // Nuxt 2.9 - 2.13
 }
 
