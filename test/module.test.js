@@ -1,9 +1,8 @@
-import { setupTest } from '@nuxtjs/module-test-utils'
+import { expectModuleToBeCalledWith, getNuxt, setupTest } from '@nuxt/test-utils'
 
 describe('module', () => {
-  // eslint-disable-next-line
-  const ctx = setupTest({
-    __dirname,
+  setupTest({
+    testDir: __dirname,
     fixture: '../example',
     config: {
       myModule: {
@@ -13,10 +12,10 @@ describe('module', () => {
   })
 
   test('should inject plugin', () => {
-    expect(ctx).toNuxtPluginAdded({
+    expectModuleToBeCalledWith('addPlugin', {
       src: expect.stringContaining('templates/plugin.js'),
       fileName: 'myPlugin.js',
-      options: ctx.config.myModule
+      options: getNuxt().options.myModule
     })
   })
 })

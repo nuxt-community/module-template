@@ -1,9 +1,8 @@
-import { setupTest, createPage } from '@nuxtjs/module-test-utils'
+import { setupTest, createPage } from '@nuxt/test-utils'
 
 describe('module', () => {
-  // eslint-disable-next-line
-  const ctx = setupTest({
-    __dirname,
+  setupTest({
+    testDir: __dirname,
     browser: true,
     fixture: '../example'
   })
@@ -11,6 +10,7 @@ describe('module', () => {
   test('browser', async () => {
     const page = await createPage('/')
     const html = await page.getHtml()
+
     expect(html).toContain('Works!')
   })
 })
