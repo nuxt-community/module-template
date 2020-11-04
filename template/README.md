@@ -58,4 +58,4 @@ Copyright (c) {{ author }}
 [codecov-href]: https://codecov.io/gh/{{ github }}
 
 [license-src]: https://img.shields.io/npm/l/{{ name }}.svg
-[license-href]: https://npmjs.com/package/{{ name }}
+[license-href]: ./LICENSE
