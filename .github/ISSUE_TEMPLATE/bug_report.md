@@ -28,8 +28,8 @@ nuxt: <!-- ex: 2.0.0 -->
 > :warning: without a minimal reproduction we wont be able to look into your issue
 
 **Link:** 
-[ ] https:///codesandbox.io/
-[ ] GitHub repository
+- [ ] https://codesandbox.io/
+- [ ] GitHub repository
 
 #### What is expected?
 #### What is actually happening?
