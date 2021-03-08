@@ -1,3 +1,20 @@
+# Using this template
+
+1. Clone this repo locally
+   ```bash
+   npx degit https://github.com/nuxt-community/module-template.git my-new-project
+   cd my-new-project
+   yarn # or npm install
+   ```
+2. Search and replace all templated names:
+   * `npm_package` => the name of your chosen npm package - e.g. `@nuxtjs/http`
+   * `myModule` => a camel-cased version of your npm package for namespacing your module options - e.g. `http`
+   * `github_repo` => your GitHub repo - e.g. `nuxt-community/http-module`
+
+3. Remove this section of the `README.md` and dive in!
+
+---
+
 # npm_package
 
 [![npm version][npm-version-src]][npm-version-href]
