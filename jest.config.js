@@ -8,6 +8,7 @@ module.exports = {
       }
     ]
   },
+  globalSetup: '<rootDir>/test/setup.ts',
   moduleNameMapper: {
     'npm_package/templates/(.*)': '<rootDir>/dist/templates/$1',
     npm_package: '<rootDir>/src'

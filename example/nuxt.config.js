@@ -9,6 +9,9 @@ export default {
   ],
   hooks: {
     async 'modules:before' () {
+      if (process.env.NODE_ENV === 'test') {
+        return
+      }
       // This is for developing templated files
       // and ensures we get live-reloading in our Nuxt example
       // whilst editing TypeScript sources.
