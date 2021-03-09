@@ -7,8 +7,6 @@ on:
   pull_request:
     branches:
       - main
-      # TODO: temporary to show results in PR
-      - template
 
 jobs:
   ci:
