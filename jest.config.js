@@ -14,5 +14,5 @@ module.exports = {
     npm_package: '<rootDir>/src'
   },
   collectCoverage: true,
-  collectCoverageFrom: ['src/**', '!templates/**']
+  collectCoverageFrom: ['src/**', 'dist/templates/**']
 }
