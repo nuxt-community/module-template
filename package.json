@@ -39,6 +39,7 @@
     "@babel/preset-typescript": "latest",
     "@nuxt/test-utils": "latest",
     "@nuxt/types": "latest",
+    "@nuxt/typescript-build": "latest",
     "@nuxtjs/eslint-config-typescript": "latest",
     "@siroc/jest-preset": "latest",
     "@types/jest": "latest",

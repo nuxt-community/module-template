@@ -1,4 +1,5 @@
 import defu from 'defu'
+import { extname } from 'upath'
 
 import { Module, NuxtOptions } from '@nuxt/types'
 
@@ -14,9 +15,10 @@ const nuxtModule: Module<ModuleOptions> = /* async */ function (moduleOptions) {
   const nuxtOptions: NuxtOptions = this.nuxt.options
   console.log('Normalized & typed Nuxt options available, e.g.', { rootDir: nuxtOptions.rootDir })
 
+  const src = require.resolve('./templates/plugin')
   this.addPlugin({
-    src: require.resolve('npm_package/templates/plugin.js'),
-    fileName: 'myPlugin.js',
+    src,
+    fileName: 'myPlugin' + extname(src),
     options
   })
 }
