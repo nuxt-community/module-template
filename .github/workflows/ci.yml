@@ -9,6 +9,8 @@ on:
     branches:
       - master
       - main
+      # TODO: temporary to show results in PR
+      - template
 
 jobs:
   ci:
