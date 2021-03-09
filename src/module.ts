@@ -1,4 +1,3 @@
-import { resolve } from 'upath'
 import defu from 'defu'
 
 import { Module, NuxtOptions } from '@nuxt/types'
