@@ -50,8 +50,7 @@
     "nuxt-edge": "latest",
     "playwright": "latest",
     "siroc": "latest",
-    "standard-version": "latest",
-    "typescript": "latest"
+    "standard-version": "latest"
   },
   "publishConfig": {
     "access": "public"
