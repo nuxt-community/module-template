@@ -13,10 +13,10 @@ const nuxtModule: Module<ModuleOptions> = /* async */ function (moduleOptions) {
   const options = defu(this.options[CONFIG_KEY] /* istanbul ignore next */ || {}, moduleOptions, DEFAULTS)
 
   const nuxtOptions: NuxtOptions = this.nuxt.options
-  console.log('[remove] Normalized & typed Nuxt options', nuxtOptions)
+  console.log('Normalized & typed Nuxt options available, e.g.', { rootDir: nuxtOptions.rootDir })
 
   this.addPlugin({
-    src: resolve(__dirname, '../templates/plugin.js'),
+    src: require.resolve('npm_package/templates/plugin.js'),
     fileName: 'myPlugin.js',
     options
   })

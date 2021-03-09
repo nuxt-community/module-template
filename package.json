@@ -14,13 +14,13 @@
       "require": "./dist/module.js",
       "import": "./dist/module.es.js"
     },
+    "./templates/*": "./dist/templates/*",
     "./package.json": "./package.json"
   },
   "main": "./dist/module.js",
   "types": "./dist/module.d.ts",
   "files": [
-    "dist",
-    "templates"
+    "dist"
   ],
   "scripts": {
     "build": "siroc build",
@@ -39,7 +39,6 @@
     "@babel/preset-typescript": "latest",
     "@nuxt/test-utils": "latest",
     "@nuxt/types": "latest",
-    "@nuxt/typescript-build": "latest",
     "@nuxtjs/eslint-config-typescript": "latest",
     "@siroc/jest-preset": "latest",
     "@types/jest": "latest",
@@ -49,7 +48,8 @@
     "jest": "latest",
     "nuxt-edge": "latest",
     "siroc": "latest",
-    "standard-version": "latest"
+    "standard-version": "latest",
+    "typescript": "latest"
   },
   "publishConfig": {
     "access": "public"
