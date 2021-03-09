@@ -26,8 +26,8 @@
     "build": "siroc build",
     "dev": "nuxt example",
     "lint": "eslint --ext .js,.ts,.vue .",
-    "release": "yarn build && yarn test && standard-version && git push --follow-tags && npm publish",
-    "test": "yarn lint && jest"
+    "release": "yarn build && yarn lint && yarn test && standard-version && git push --follow-tags && npm publish",
+    "test": "jest"
   },
   "dependencies": {
     "defu": "latest",
