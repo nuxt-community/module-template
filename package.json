@@ -47,6 +47,7 @@
     "eslint": "latest",
     "jest": "latest",
     "nuxt-edge": "latest",
+    "playwright": "latest",
     "siroc": "latest",
     "standard-version": "latest",
     "typescript": "latest"
