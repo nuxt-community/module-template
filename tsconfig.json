@@ -2,6 +2,7 @@
   "compilerOptions": {
     "strict": true,
     "target": "es2018",
+    "allowJs": true,
     "module": "esnext",
     "lib": [
       "esnext",

@@ -13,8 +13,8 @@ describe('module', () => {
 
   test('should inject plugin', () => {
     expectModuleToBeCalledWith('addPlugin', {
-      src: expect.stringContaining('templates/plugin.js'),
-      fileName: 'myPlugin.js',
+      src: expect.stringMatching(/templates[\\/]plugin/),
+      fileName: expect.stringContaining('myPlugin'),
       options: getNuxt().options.myModule
     })
   })

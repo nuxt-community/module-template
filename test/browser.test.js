@@ -9,7 +9,7 @@ describe('module', () => {
 
   test('browser', async () => {
     const page = await createPage('/')
-    const html = await page.getHtml()
+    const html = await page.content()
 
     expect(html).toContain('Works!')
   })
