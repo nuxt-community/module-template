@@ -1,10 +1,9 @@
 import { join } from 'path'
 import { mkdist } from 'mkdist'
 
-const path = join(__dirname, '../src/templates')
 export default async function compileTemplates () {
   await mkdist({
-    srcDir: path,
+    srcDir: join(__dirname, '../src/templates'),
     distDir: join(__dirname, '../dist/templates')
   })
 }
