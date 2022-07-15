@@ -9,21 +9,29 @@
   ],
   "repository": "github_repo",
   "license": "MIT",
-  "main": "dist/module.js",
-  "types": "dist/module.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/module.js",
+      "import": "./dist/module.es.js"
+    },
+    "./templates/*": "./dist/templates/*",
+    "./package.json": "./package.json"
+  },
+  "main": "./dist/module.js",
+  "types": "./dist/module.d.ts",
   "files": [
-    "dist",
-    "templates"
+    "dist"
   ],
   "scripts": {
     "build": "siroc build",
-    "dev": "nuxt-ts example",
+    "dev": "nuxt example",
     "lint": "eslint --ext .js,.ts,.vue .",
-    "release": "yarn build && yarn test && standard-version && git push --follow-tags && npm publish",
-    "test": "yarn lint && jest"
+    "release": "yarn build && yarn lint && yarn test && standard-version && git push --follow-tags && npm publish",
+    "test": "jest"
   },
   "dependencies": {
-    "defu": "^2.0.4"
+    "defu": "latest",
+    "upath": "latest"
   },
   "devDependencies": {
     "@babel/plugin-transform-runtime": "latest",
@@ -31,7 +39,7 @@
     "@babel/preset-typescript": "latest",
     "@nuxt/test-utils": "latest",
     "@nuxt/types": "latest",
-    "@nuxt/typescript-runtime": "latest",
+    "@nuxt/typescript-build": "latest",
     "@nuxtjs/eslint-config-typescript": "latest",
     "@siroc/jest-preset": "latest",
     "@types/jest": "latest",
@@ -40,6 +48,7 @@
     "eslint": "latest",
     "jest": "latest",
     "nuxt-edge": "latest",
+    "playwright": "latest",
     "siroc": "latest",
     "standard-version": "latest"
   },
