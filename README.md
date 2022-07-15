@@ -1,3 +1,7 @@
+---
+## ↪️ Deprecated: Please migrate to new [Starter Template](https://github.com/nuxt/starter/tree/module) using [Module Builder](https://github.com/nuxt/module-builder)
+---
+
 # Module Template for Nuxt.js
 
 > Nuxt.js module template
